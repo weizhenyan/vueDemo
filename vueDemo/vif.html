@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>v-if渲染</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="vif.css">
+	<script type="text/javascript" src="https://unpkg.com/vue"></script>
+</head>
+<body>
+   <div id="vue-app">
+      <h1>v-if条件</h1>
+      <button v-on:click="error = !error">Toggle Error</button>
+      <button v-on:click="success = !success">Toggle Success</button>
+      <p v-if="error">网络连接错误404</p>
+      <p v-else-if="success">网络连接成功200</p>
+   </div>
+<script type="text/javascript" src="vif.js"></script>
+</body>
+</html>

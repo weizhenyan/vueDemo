@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>class与style绑定</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="vue-app">
+
+        <h1>动态绑定类名</h1>
+        <h2>示列1</h2>
+  <!--       <div v-on:click="changeColor =! changeColor" v-bind:class="{changeColor:changeColor}">
+            <span>Henry</span>
+        </div>
+ -->
+        <h2>示列2</h2>
+          <button v-on:click="changeColor = !changeColor">change Color</button>
+          <button v-on:click="changeLength = !changeLength">change Length</button>
+          <div v-bind:class="compClasses">
+            <span>Henry</span>
+          </div>
+
+  </div>
+
+
+<script type="text/javascript" src="style.js"></script>
+</body>
+</html>

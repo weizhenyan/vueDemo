@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>数据双向绑定</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="databind.css">
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="vue-app">
+      <h1>双向绑定数据</h1>
+      <label>姓名:</label>
+      <!-- <input ref="name" type="text"  v-on:keyup="logName"> -->
+      <input ref="name" type="text"  v-model="name">
+      <span>{{name}}</span>
+      <label>年龄:</label>
+      <!-- <input ref="age" type="text"  v-on:keyup="logAge"> -->
+      <input ref="age" type="text"  v-model="age">
+      <span>{{age}}</span>
+  </div>
+
+
+  <script type="text/javascript" src="databind.js"></script>
+</body>
+</html>
